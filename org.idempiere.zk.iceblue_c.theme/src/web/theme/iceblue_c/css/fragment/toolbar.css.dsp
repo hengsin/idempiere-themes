@@ -110,3 +110,7 @@
     width: 0px;
   }
 }
+.z-toolbarbutton-checked {
+    color: #FFFFFF !important;
+    background-color: #0093F9 !important;
+}
