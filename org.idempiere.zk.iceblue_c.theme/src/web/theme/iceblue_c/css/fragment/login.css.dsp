@@ -1,9 +1,9 @@
 .login-window {
-	background-color: #E5E5E5;
+	background-color: #F5F8FF;
 }
 
 .login-window .z-window-content {
-	background-color: #E5E5E5;
+	background-color: #F5F8FF;
 }
 
 .login-box-body {
@@ -76,7 +76,7 @@
 
 .login-east-panel, .login-west-panel {
 	width: 350px;
-	background-color: #E0EAF7;
+	background-color: #F3F6FF; 
 	position: relative;
 }
 @media screen and (max-width: 659px) {

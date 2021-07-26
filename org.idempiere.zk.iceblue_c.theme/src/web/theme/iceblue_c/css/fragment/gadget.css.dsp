@@ -9,10 +9,6 @@
 	width: 16px;
 }
 
-.z-panel-head {
-	background-image: none; 
-	background-color: #f8f8fd;
-}
 .z-panel-icon {
 	font-size: 12px !important;
     color: #ACACAC !important;

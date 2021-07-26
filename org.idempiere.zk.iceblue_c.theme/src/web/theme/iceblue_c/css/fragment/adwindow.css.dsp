@@ -147,6 +147,10 @@
 	${fontSizeM};
 }
 
+.adwindow-detailpane-toolbar .z-toolbarbutton-content {
+	line-height: 14px;
+}
+
 .adwindow-detailpane-message {
 	float: right;
 }

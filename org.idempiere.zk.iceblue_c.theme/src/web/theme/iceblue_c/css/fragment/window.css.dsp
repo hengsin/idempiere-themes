@@ -38,7 +38,6 @@ div.wc-modal, div.wc-modal-none, div.wc-highlighted, div.wc-highlighted-none {
 .z-window-overlapped, .z-window-popup, .z-window-modal, .z-window-highlighted, 
 .embedded-dialog .z-window-embedded
 {
-	background-color: #fff;
 	margin: 0px;
 }
 
@@ -49,10 +48,6 @@ div.wc-modal, div.wc-modal-none, div.wc-highlighted, div.wc-highlighted-none {
 {
 	color: #484848;
 	font-weight: bold;
-}
-
-.z-window-header, .z-window-content {
-	background-image: none !important;
 }
 
 .z-window-modal-shadow, .z-window-overlapped-shadow, .z-window-popup-shadow, .z-window-embedded-shadow, .z-window-highlighted-shadow
@@ -91,7 +86,7 @@ div.wc-modal, div.wc-modal-none, div.wc-highlighted, div.wc-highlighted-none {
 
 .dialog-footer {
 	margin-bottom: 0;
-	background-color: #f5f5f5;
+	background-color: #F7FAFF;
 	border-top: 1px solid #ddd;
 	-webkit-box-shadow: inset 0 1px 0 #ffffff;
 	-moz-box-shadow: inset 0 1px 0 #ffffff;

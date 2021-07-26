@@ -13,7 +13,7 @@
 	box-sizing: border-box;
 	-moz-box-sizing: border-box; /* Firefox */
 	display: inline-block;
-	padding-right: 22px; 
+	padding-right: 23px; 
 	width: 100%;
 }
 .editor-input.z-combobox + .editor-button.z-button {
@@ -41,7 +41,7 @@
 	min-height: 18px;
 	border: none;
 	position: absolute;
-	right: 3px;
+	right: 2px;
 	top: 4px;
 }
 
