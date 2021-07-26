@@ -1,10 +1,12 @@
 <%-- Combobox --%>
 .z-combobox-disabled, .z-combobox[disabled] {
-	color: black !important; cursor: default !important; opacity: 1; -moz-opacity: 1; -khtml-opacity: 1; filter: alpha(opacity=100);
+	color: rgba(0,0,0,0.7) !important; 
+	cursor: default !important; 
 }
 
-.z-combobox-disabled * {
-	color: black !important; cursor: default !important;
+.z-combobox-disabled > input {
+	color: rgba(0,0,0,0.7) !important; 
+	cursor: default !important;
 }
 
 .z-combobox-text-disabled {

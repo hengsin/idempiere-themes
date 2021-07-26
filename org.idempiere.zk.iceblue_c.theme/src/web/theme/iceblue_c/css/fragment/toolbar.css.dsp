@@ -114,3 +114,6 @@
     color: #FFFFFF !important;
     background-color: #0093F9 !important;
 }
+.z-toolbarbutton[disabled], .z-toolbarbutton[disabled]:hover {
+	background-color: transparent;
+}
