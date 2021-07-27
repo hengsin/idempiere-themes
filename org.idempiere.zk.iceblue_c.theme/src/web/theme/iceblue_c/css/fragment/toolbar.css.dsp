@@ -63,8 +63,14 @@
 .z-toolbarbutton.small-toolbarbutton [class^="z-icon-"] {
 	font-size: 12px;
 }
-.z-toolbarbutton, .z-toolbarbutton .z-toolbarbutton-content {	
+.z-toolbarbutton {
+	display: inline-flex;	
 	align-items: center;
+}
+.z-toolbarbutton .z-toolbarbutton-content {
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .z-toolbar-content {
 	display:flex;
@@ -81,13 +87,8 @@
 .font-icon-toolbar-button.toolbar-button {
 	color :#333;
 }
-.font-icon-toolbar-button.toolbar-button, .font-icon-toolbar-button.toolbar-button .z-toolbarbutton-content {
-	display:inline-flex;
-	align-items: center;
-	justify-content: center; 
-}
-.font-icon-toolbar-button:active, .font-icon-toolbar-button:hover {
-	color: #3949AB;
+.font-icon-toolbar-button.toolbar-button:hover {
+	color: #fff;
 }
 .font-icon-toolbar-button .z-toolbarbutton-content {
 	color: inherit;

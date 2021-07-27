@@ -212,9 +212,7 @@
 }
 
 .link.z-toolbarbutton:hover {
-	border: none !important;
-	background-image: none !important;
-	text-decoration: underline;
+	color: #fff;
 }
 
 .link.z-toolbarbutton:hover span {

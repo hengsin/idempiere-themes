@@ -62,9 +62,6 @@
 	position: relative;
 	overflow: hidden;
 }
-.adwindow-toolbar.z-toolbar .z-toolbarbutton {
-	display: inline-flex;
-}
 
 .adwindow-breadcrumb {
 	min-height: 32px;
@@ -124,11 +121,10 @@
 }
 
 .adwindow-detailpane-toolbar .z-toolbarbutton {
-	float: left;
-	display: inline-block;
+	display: inline-flex;
 	padding: 0px;
-	padding-left: 1px;
 	width: 20px;
+	line-height: 14px;
 }
 
 .adwindow-detailpane-toolbar .z-toolbarbutton img {
@@ -149,6 +145,7 @@
 
 .adwindow-detailpane-toolbar .z-toolbarbutton-content {
 	line-height: 14px;
+	height: 16px;
 }
 
 .adwindow-detailpane-message {
