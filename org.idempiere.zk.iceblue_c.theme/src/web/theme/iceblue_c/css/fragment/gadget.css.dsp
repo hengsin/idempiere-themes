@@ -194,3 +194,7 @@
 
 .fav-new-btn.z-toolbarbutton [class^="z-icon-"] {
 }
+
+.new-toolbarbutton.z-toolbarbutton {
+	padding: 2px 5px;
+}

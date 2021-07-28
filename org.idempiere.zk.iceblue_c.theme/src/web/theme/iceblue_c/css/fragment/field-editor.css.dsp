@@ -37,12 +37,17 @@
 	background-color: #0093f9;
 	background-image: none;
 	width: 20px;
-	height: 18px;
-	min-height: 18px;
-	border: none;
+	height: 22px;
+	border: 1px solid transparent;
 	position: absolute;
-	right: 2px;
-	top: 4px;
+	right: 1px;
+	top: 1px;
+}
+.z-chosenbox {
+	height: 28px;
+}
+.z-chosenbox + .editor-button {
+	height: 26px;
 }
 
 .editor-button :hover {

@@ -211,14 +211,6 @@
 	border: none !important;
 }
 
-.link.z-toolbarbutton:hover {
-	color: #fff;
-}
-
-.link.z-toolbarbutton:hover span {
-	color: blue;
-}
-
 .desktop-home-tabpanel .z-panel-head {
 }
 

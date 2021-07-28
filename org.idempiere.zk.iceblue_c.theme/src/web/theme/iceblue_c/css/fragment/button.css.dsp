@@ -1,11 +1,8 @@
 .z-button {
   display: inline-block;
-  margin: 0px;
   padding: 4px 20px;
   text-align: center;
-  vertical-align: top;
   cursor: pointer;
-  background-color: #0093f9;
 }
 
 .z-button-hover,

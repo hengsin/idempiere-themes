@@ -115,4 +115,7 @@ div.z-listbox-body .z-listcell {
 .z-listbox-autopaging .z-listcell-cnt {
 	height: 20px;
 }
+.z-listheader-content .z-label {
+	color: #FFF;
+}
 
