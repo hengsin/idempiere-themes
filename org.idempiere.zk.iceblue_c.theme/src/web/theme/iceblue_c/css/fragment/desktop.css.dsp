@@ -70,10 +70,6 @@
 	padding-top: 0px; 
 }
 
-.desktop-tabbox .z-tabs-content {
-    width: 5555px !important;
-}
-
 .desktop-tabbox .z-tab {
 }
 @media screen and (max-width: 360px) {
@@ -159,7 +155,6 @@
 .z-anchorchildren { overflow:visible }
 
 .desktop-hometab {
-	margin-left: 2px !important;
 }
 
 .desktop-tabbox .z-tabs .z-toolbar-tabs-body {
@@ -225,7 +220,7 @@
 }
 .window-container-toolbar-btn.z-toolbarbutton .z-toolbarbutton-content [class^="z-icon"] {
 	padding: 3px 3px;
-	font-size: 22px;
+	font-size: 18px;
 }
 .window-container-toolbar > .z-toolbar-content,
 .window-container-toolbar-btn.z-toolbarbutton, 
@@ -245,3 +240,33 @@
 	overflow-x: auto;
 	padding: 8px;
 }
+
+.z-menuitem.selected .z-menuitem-text {
+	font-weight: bold;
+}
+
+.window-container-toolbar-btn.tab-list.z-toolbarbutton {
+	width: auto;	
+	padding: 2px 3px;
+}
+.window-container-toolbar-btn.tab-list.z-toolbarbutton > .z-toolbarbutton-content {
+	font-size: 14px;
+	padding-right: 6px;
+}
+.window-container-toolbar-btn.tab-list.z-toolbarbutton > .z-toolbarbutton-content > i {
+	padding-right: 0px;
+	margin-right: -4px;
+	font-size: 18px;
+}
+
+.desktop-tabbox.z-tabbox > .z-tabbox-icon.z-tabbox-left-scroll,
+.desktop-tabbox.z-tabbox > .z-tabbox-icon.z-tabbox-right-scroll {
+	line-height: 30px;
+}
+
+.desktop-tabbox.z-tabbox  > .z-tabs > .z-tabs-content .z-tab-image {
+	width: 16px;
+	height: 16px;
+	padding-bottom: 4px;
+}
+
