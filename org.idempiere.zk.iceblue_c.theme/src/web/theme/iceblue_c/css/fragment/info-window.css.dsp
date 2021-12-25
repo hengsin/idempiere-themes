@@ -34,3 +34,7 @@
 	white-space: pre-line;
 	text-overflow: ellipsis;
 }
+
+.statusBar > div > .z-west,  .statusBar > div > .z-east {
+	border: none;
+}

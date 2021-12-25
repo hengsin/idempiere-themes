@@ -18,6 +18,9 @@ div.wc-modal, div.wc-modal-none, div.wc-highlighted, div.wc-highlighted-none {
 	padding: 0px;
 }
 
+.desktop-tabpanel > .z-window-embedded {
+	border: none;
+}
 .z-window-embedded .z-window-content {
 	border: none;
 }
@@ -87,7 +90,7 @@ div.wc-modal, div.wc-modal-none, div.wc-highlighted, div.wc-highlighted-none {
 .dialog-footer {
 	margin-bottom: 0;
 	background-color: #F7FAFF;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid transparent;
 	-webkit-box-shadow: inset 0 1px 0 #ffffff;
 	-moz-box-shadow: inset 0 1px 0 #ffffff;
 	box-shadow: inset 0 1px 0 #ffffff;

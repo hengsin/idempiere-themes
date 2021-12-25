@@ -73,6 +73,10 @@ div.z-column-cnt, div.z-grid-header div.z-auxheader-cnt {
 .z-row .z-cell, .z-listitem .z-listcell, .z-listitem.z-listitem-selected>.z-listcell {
 	border-left: 1px solid #cfcfcf;
 }
+.z-row .z-cell, .z-listitem .z-listcell:first-child, 
+.z-listitem.z-listitem-selected > .z-listcell:first-child {
+	border-left: none;
+}
 
 .z-grid-emptybody td {
 	text-align: left;

@@ -76,7 +76,7 @@
 
 .login-east-panel, .login-west-panel {
 	width: 350px;
-	background-color: #F3F6FF; 
+	background-color: #e0f2ff; 
 	position: relative;
 }
 @media screen and (max-width: 659px) {

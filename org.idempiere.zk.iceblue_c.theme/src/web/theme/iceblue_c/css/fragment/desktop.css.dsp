@@ -1,4 +1,7 @@
 <%-- header --%>
+.desktop-north {
+	background-color: #C7E8FF;
+}
 .desktop-header-left {
 	margin: 0;
 	margin-left: 1px;
@@ -16,10 +19,10 @@
 }
 
 .desktop-header {
-	background-color: #E4E4E4;
+	background-color: #C7E8FF;
 	width: 100%;
 	height: 46px;
-	border-bottom: 1px solid #C5C5C5 !important;
+	border-bottom: 1px solid #ADDDFF !important;
 	padding-left: 4px;
 }
 .desktop-header.mobile {
@@ -112,7 +115,7 @@
 	width: 200px;
 	border: none;
 	border-right: 1px solid #C5C5C5;
-	background-color: #e9ebee;
+	background-color: #e0f2ff;
 	padding-top: 2px; 
 }
 
@@ -120,18 +123,18 @@
 	width: 200px;
 	border: none;
 	border-left: 1px solid #C5C5C5;
-	background-color: #e9ebee;
+	background-color: #e0f2ff;
 	padding-top: 2px; 
 }
 
 .desktop-left-column + .z-west-splitter,  .desktop-left-column.z-west {
 	border-top: none; 
-	border-right: 1px solid #c5c5c5;
+	border-right: 1px solid transparent;
 }
 
 .desktop-right-column + .z-east-splitter,  .desktop-right-column.z-east {
 	border-top: none; 
-	border-left: 1px solid #c5c5c5;
+	border-left: 1px solid transparent;
 }
 
 .desktop-left-column .z-west-body {

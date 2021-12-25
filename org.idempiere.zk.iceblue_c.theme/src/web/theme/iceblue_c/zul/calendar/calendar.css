@@ -381,21 +381,18 @@
 
 .z-calendars-fl{
 	background:transparent no-repeat 0 bottom;
-	background-image:url(/erp/zkau/web/b13c8796/img/shdlf.gif);
 	padding-left:6px;
 	zoom:1
 }
 
 .z-calendars-fr{
 	background:transparent no-repeat right bottom;
-	background-image:url(/erp/zkau/web/b13c8796/img/shdrg.gif);
 	padding-right:6px;
 	zoom:1
 }
 
 .z-calendars-fm{
 	background:transparent repeat-x 0 0;
-	background-image:url(/erp/zkau/web/b13c8796/img/shdmd.gif);
 	height:6px;
 	font-size:0;
 	line-height:0;
