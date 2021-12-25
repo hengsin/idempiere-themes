@@ -2,9 +2,9 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Theme
 Bundle-SymbolicName: org.idempiere.zk.iceblue_c.theme
-Bundle-Version: 10.0.0.qualifier
+Bundle-Version: 9.0.0.qualifier
 Bundle-Vendor: iDempiere
-Fragment-Host: org.adempiere.ui.zk;bundle-version="10.0.0"
+Fragment-Host: org.adempiere.ui.zk;bundle-version="9.0.0"
 Automatic-Module-Name: org.idempiere.zk.iceblue.c.theme
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Jetty-WarPrependFragmentResourcePath: /
