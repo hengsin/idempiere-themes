@@ -93,6 +93,15 @@
 	line-height: inherit;
 }
 
+.adwindow-breadcrumb-menu::after {
+	font-family: FontAwesome;
+	font-weight: normal;
+    font-style: normal;
+	font-size: 12px;
+    content: "\f0d7";
+    margin-left: 3px;
+}
+
 .adwindow-detailpane {
 	width: 100%; 
 	overflow-y: visible;
