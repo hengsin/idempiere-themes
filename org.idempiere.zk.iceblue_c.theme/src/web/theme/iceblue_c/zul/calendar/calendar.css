@@ -1007,3 +1007,7 @@ a.refresh > span.z-toolbarbutton-content {
     padding: 5px;
 }
 
+/*notes: without this fix calendar increases repeatedly height when switching between home and window tab in dashboard row orientation*/
+.z-calendars-month-cnt {
+	height: 300px !important;
+}

@@ -17,8 +17,30 @@
     border: 0px !important;
     border-radius: 0px !important;
 }
+
+.statusline-wrapper > .z-panel-head {
+	position: absolute;
+	top: 1;
+	z-index: 1;
+	width: calc(100% - 10px);
+}
+
+.dashboard-widget > .z-panel-body {
+	height: 100%;
+}
+
+.statusline-wrapper {
+	height: 100%;
+}
+
+.statusline-wrapper > .z-panel-body {
+	position: relative;
+	top: 0;
+	height: 100%;
+}
+
 .z-panel {
-	border-radius: 0px;
+	border-radius: 3px;
 	border: 1px solid #d8d8d8;
 	border-bottom-width: 2px;
 }
@@ -28,7 +50,13 @@
 }
 
 .z-panelchildren {
-	padding: 0px !important;
+	border: none;
+	height: 100%;
+}
+
+.z-panel-head {
+	padding-bottom: 1px;
+	border: none;
 }
 
 .z-panel-head .z-panel-header {
@@ -48,11 +76,12 @@
 }
 
 .dashboard-widget {
-	margin-top: 4px; 
+	margin-top: 1px; 
 	margin-left: auto; 
 	margin-right: auto;
 	position: relative;
-	width: 98%;	
+	width: 99%;	
+	height: 100%;
 }
 
 .dashboard-widget-max {
@@ -75,6 +104,7 @@
 .favourites-box {
 	width: 100%;
 	margin: auto;
+	padding: 1px 0px 1px 0px;
 }
 
 .favourites-box .z-vbox {
@@ -82,6 +112,7 @@
 }
 
 .favourites-box .z-hbox {
+	padding: 0px 4px;
 	width: 100%; 
 }
 
@@ -93,9 +124,29 @@
 	font-size: 20px;
 }
 
+.recentitems-box {
+	width: 100%;
+	margin: auto;
+	padding: 1px 0px 1px 0px;
+}
+
+.recentitems-box A {
+	display: block;
+	padding: 1px 0px;
+}
+
+.recentitems-box .z-toolbar-start {
+	float: right;
+}
+.recentitems-box A.trash-toolbarbutton {
+	display: inline-block;
+}
 .recentitems-box .z-toolbar .z-toolbar-content {
 	display: inline-flex;
 	align-items: center;
+}
+.recentitems-box .trash-toolbarbutton .z-toolbarbutton-content {
+	font-size: 16px;
 }
 .recentitems-box .trash-font-icon {
 	font-family: FontAwesome;
@@ -112,6 +163,11 @@
 	width: 100%;
 }
 
+.views-box .z-toolbarbutton {
+	width: 100%;
+	padding: 0px 14px;
+}
+
 .views-box .link img {
 	height: 16px;
 	width: 16px;
@@ -126,6 +182,7 @@
 .activities-box {
 	width: 100%;
 	margin: auto;
+	padding: 0px 14px;
 	cursor: pointer;
 }
 
@@ -174,11 +231,50 @@
 	width: 100%;
 }
 
+.gauge-indicator-title {
+	text-align: center;
+	padding-top: 1px; 
+	padding-bottom: 1px;
+	line-height:12px;
+}
+
+.performance-gadget {
+	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+	cursor: pointer;
+}
+
+.performance-gadget > .z-div {
+	width: 100%;	
+}
+
+@media screen and (min-width: 768px) {
+	.dashboard-row .chart-gadget {
+		max-height: 300px; 
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.dashboard-row .chart-gadget {
+		max-height: 150px; 
+	}
+}
+
 .dashboard-widget.dashboard-widget-max .chart-gadget {
 	height: 100% !important; 
 }
 .chart-gadget {
 	text-align: center !important;
+}
+
+.statusline-gadget {
+	display: flex;
+	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ 	padding: 40px 0px 10px;
+ 	height: 100%;
 }
 
 .help-content
@@ -197,4 +293,12 @@
 
 .new-toolbarbutton.z-toolbarbutton {
 	padding: 2px 5px;
+}
+
+.z-anchorchildren .z-hlayout {
+	white-space: normal;
+}
+
+.desktop-home-tabpanel .z-hlayout-inner {
+	padding: 5px !important;
 }
