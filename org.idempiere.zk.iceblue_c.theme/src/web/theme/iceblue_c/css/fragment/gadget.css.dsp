@@ -68,6 +68,12 @@
 	cursor: move;
 }
 
+.z-caption-content .z-toolbarbutton {
+	vertical-align: middle;
+	margin-bottom: 2px;
+	padding: 0px 1px;
+}
+
 .dashboard-layout {
 	width: 100%;
 	height: 100%;
