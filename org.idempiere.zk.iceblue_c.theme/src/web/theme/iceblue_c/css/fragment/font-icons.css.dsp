@@ -45,6 +45,9 @@
 	font-weight: bold;
 	content: "\f068";
 }
+.z-icon-DeSelectAll:before {
+	content: "\f248";
+}
 .z-icon-Detail:before {	
 	content: "\f0d7";
 }
@@ -62,6 +65,9 @@
 	font-size: 32px;
 	color: yellow;
 	font-family: FontAwesome;
+}
+.z-icon-ExcludeSelected:before {
+	content: "\f05e";
 }
 .z-icon-Expand:before {
 	content: "\f0d7";
