@@ -154,7 +154,7 @@ div.wc-modal, div.wc-modal-none, div.wc-highlighted, div.wc-highlighted-none {
     height: 24px;
     min-height: 24px;
     right: 0px;
-    top: 3px;
+    top: 1px;
     border: 1px solid #CFCFCF;
     border-radius: 0;
 }
