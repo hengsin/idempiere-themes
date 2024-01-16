@@ -135,6 +135,16 @@
 	display: inline-flex;
 	align-items: center;
 }
+
+.dashboard-report-toolbar .z-toolbar-content {
+	display: block;
+}
+
+.dashboard-report-toolbar .rowcount-label {
+	float: right;
+	padding: 5px;
+}
+
 .recentitems-box .trash-toolbarbutton .z-toolbarbutton-content {
 	font-size: 16px;
 }
@@ -154,6 +164,7 @@
 }
 
 .views-box .z-toolbarbutton {
+	width: 100%;
 	padding: 0px 14px;
 }
 
@@ -165,7 +176,11 @@
 	text-align: center;
 }
 .views-box .z-toolbarbutton [class^="z-icon"]:before {
-	width: 14px;
+	width: 16px;
+	display: inline-block;
+}
+.views-box .z-toolbarbutton .z-toolbarbutton-content {
+	justify-content: left;
 }
 
 .activities-box {
@@ -284,6 +299,44 @@
 	padding: 2px 5px;
 }
 
+<%-- User Favorite Dashboard Panel Start --%>
+.fav-tree-panel {
+  border-radius: 0px;
+  border: 1px solid #d8d8d8 !important;
+}
+
+.fav-toolbar {
+}
+
+.fav-toolbar-div {
+  position: relative;
+  width: 100%;
+}
+
+.fav-tree-btn {
+  margin-left: 5px !important;
+  padding: 3px 15px;
+  border: 1px solid #6d6d6d;
+}
+
+.fav-folder-textbox {
+  width: 100%;
+}
+.fav-summary-folder .z-treecell-content {
+  font-weight: bold;
+}
+
+.fav-expand-mode {
+  transform: rotate(180deg);
+}
+
+.fav-mobile-ctx-menu {
+  margin: 0px 5px;
+  padding: 0px 5px;
+  vertical-align: middle;
+}
+<%-- User Favorite Dashboard Panel End --%>
+
 .z-anchorchildren .z-hlayout {
 	white-space: normal;
 }
@@ -295,6 +348,26 @@
 .dashboard-content-help-icon {
 	padding: 5px;
 	cursor: default;
+	visibility: hidden;
+}
+
+.z-caption:hover .dashboard-content-help-icon {
+	visibility: visible;
+}
+
+.dashboard-content-help-popup {
+	display: none;
+}
+
+.dashboard-content-help-icon:hover ~ .dashboard-content-help-popup {
+	display: inline-flex;
+	background: black;
+	color: white;
+	border-radius: 5px;
+	padding: 4px 7px;
+    position: fixed;
+    z-index: 1800;
+    max-width: 300px;
 }
 
 .fill-mandatory-process-para-wrapper {
