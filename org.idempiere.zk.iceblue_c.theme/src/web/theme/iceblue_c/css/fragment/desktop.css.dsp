@@ -71,6 +71,7 @@
 
 .desktop-tabbox {
 	padding-top: 0px; 
+	border: none;
 }
 
 .desktop-tabbox .z-tab {
@@ -102,6 +103,9 @@
 
 .desktop-center {
 	padding-top: 1px;
+}
+.desktop-center > .z-center-body {
+	padding: 0px;
 }
 
 .desktop-tabpanel {

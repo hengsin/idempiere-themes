@@ -74,7 +74,6 @@
 <%-- Splitter --%>
 .z-east-splitter-button, .z-west-splitter-button, .z-north-splitter-button, .z-south-splitter-button {
     color: rgba(0,0,0,0.60);
-    vertical-align: middle;
 }
 
 .z-east-splitter:hover .z-east-splitter-button, .z-west-splitter:hover .z-east-splitter-button, .z-north-splitter:hover .z-east-splitter-button, 
@@ -95,4 +94,17 @@
 .z-east-icon, .z-west-icon, .z-north-icon, .z-south-icon {
     font-size: 14px;
 }
- 
+
+.z-east-splitter, .z-west-splitter, .z-north-splitter, .z-south-splitter {
+	background-color: #e0f2ff;
+}
+
+.z-south-icon, .z-north-icon, .z-north-icon.z-icon-ellipsis-h, .z-south-icon.z-icon-ellipsis-h {
+  top: -3px;
+  visibility: visible;
+}
+
+.z-west-icon.z-icon-ellipsis-v, .z-east-icon.z-icon-ellipsis-v {
+  left: -3px;
+  visibility: visible;
+}

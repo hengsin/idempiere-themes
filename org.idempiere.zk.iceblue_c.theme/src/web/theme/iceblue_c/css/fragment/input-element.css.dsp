@@ -52,7 +52,13 @@ input:focus, textarea:focus, .z-combobox-input:focus, z-datebox-input:focus, sel
 	background-color: #F0F0F0 !important;
 	cursor: default !important;
 	opacity: 1 !important;
-	border: 1px solid #cfcfcf !important;
+	border: 1px solid #ECECEC;
+}
+
+.z-textbox, .z-decimalbox, .z-intbox, .z-longbox, .z-doublebox,
+.z-datebox-input, .z-datebox-button, .z-timebox-input, .z-timebox-button,
+.z-combobox-input, .z-combobox-button {
+	border: 1px solid #ECECEC;
 }
 
 <%-- workaround for http://jira.idempiere.com/browse/IDEMPIERE-692 --%>
