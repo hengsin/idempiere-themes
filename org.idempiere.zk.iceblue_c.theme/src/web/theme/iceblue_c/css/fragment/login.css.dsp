@@ -17,7 +17,7 @@
 .login-box-header {
 	background-color: white;
 	width: 720px;
-	border-radius: 20px;
+	border-radius: 20px 20px 0px 0px;
 	padding-left: 30px;
 	padding-top: 30px;
 	padding-right: 30px;
@@ -43,7 +43,7 @@
 	height: 130px;
 	width: 720px;
 	background-color: white;
-	border-radius: 20px;
+	border-radius: 0px 0px 20px 20px;
 	padding-left: 30px;
   	padding-right: 30px;
   	box-sizing: border-box;
