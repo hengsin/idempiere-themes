@@ -1,51 +1,52 @@
 .login-window {
-	background-color: #F5F8FF;
+	background-color: #F0F4F9;
 }
 
 .login-window .z-window-content {
-	background-color: #F5F8FF;
+	background-color: #F0F4F9;
 }
 
 .login-box-body {
-	width: 660px;
-	background-image: url(../images/login-box-bg.png);
-	background-repeat: repeat-y;
-	background-color: transparent;
-	z-index: 1;
+	width: 720px;
+	background-color: white;
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	padding-bottom: 100px;
 }
 
 .login-box-header {
-	background-image: url(../images/login-box-header.png);
-	background-color: transparent;
-	z-index: 2;
-	height: 54px;
-	width: 660px;
+	background-color: white;
+	width: 720px;
+	border-radius: 20px;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-right: 30px;
+	box-sizing: border-box;
 }
 
 .login-box-header-txt {
-	color: white !important;
 	font-weight: bold;
 	position: relative;
-	top: 30px;
+	display: inline-block;
+	text-align: left;
+	padding: 10px;
+	color: #484848 !important;
+	width: 100%;	
+	font-size: 2em !important;
 }
 
 .login-box-header-logo {
-	padding-top: 20px;
-	padding-bottom: 25px;
+	padding-bottom: 25px !important;
 }
 
 .login-box-footer {
-	background-image: url(../images/login-box-footer.png);
-	background-position: top right;
-	background-attachment: scroll;
-	background-repeat: repeat-y;
-	z-index: 2;
-	height: 110px;
-	width: 660px;
+	height: 130px;
+	width: 720px;
+	background-color: white;
+	border-radius: 20px;
+	padding-left: 30px;
+  	padding-right: 30px;
+  	box-sizing: border-box;
 }
 
 .login-box-footer .confirm-panel {
@@ -56,18 +57,20 @@
 	width: 604px;
 	margin-left: 10px;
 	margin-right: 10px;
-	padding-top: 40px !important;
+	padding-top: 60px !important;
 }
 
 .login-label {
 	color: black;
 	text-align: right;
 	width: 40%;
+	padding: 2px !important;
 }
 
 .login-field {
 	text-align: left;
 	width: 55%;
+	padding: 2px !important;
 }
 
 .login-btn {
@@ -78,6 +81,7 @@
 	width: 350px;
 	background-color: #e0f2ff; 
 	position: relative;
+	border: none;
 }
 @media screen and (max-width: 659px) {
 	.login-box-body, .login-box-header, .login-box-footer {
