@@ -64,8 +64,9 @@
 	height: 29px;
 }
 .status-db {
+	white-space: nowrap;
 	padding-top: 0;
-	pdding-bottom: 0;
+	padding-bottom: 0;
 	padding-left: 5px;
 	padding-right: 5px;
 	cursor: pointer;
@@ -73,6 +74,7 @@
 	height: 100%;
 	margin: 0;
 	border-left: solid 1px #9CBDFF;
+	display: inline-block;
 }
 .status-info {
 	padding-right: 10px;
