@@ -37,10 +37,11 @@
 .desktop-header-popup {
 	width: 800px;
 	border-radius: 2px;
-	border: 1px solid #d5d5d5;
-	border-right: 2px solid #d5d5d5;
-	border-bottom-width: 2px;
+	border: none;
 	right: 1px;
+}
+.desktop-header-popup, .desktop-header-popup > .z-window-content {
+	background-color: #C7E8FF;
 }
 
 .desktop-header-popup .desktop-header {
