@@ -205,3 +205,6 @@ div.wc-modal, div.wc-modal-none, div.wc-highlighted, div.wc-highlighted-none {
     top: 5px;
 }
 
+.attachment-dialog .z-north {
+	padding: 8px;
+}

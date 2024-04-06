@@ -15,5 +15,5 @@
 
 .popup-content-background 
 {
-	border: 3px solid #cfcfcf; background: #efefef;
+	background: #efefef;
 }
