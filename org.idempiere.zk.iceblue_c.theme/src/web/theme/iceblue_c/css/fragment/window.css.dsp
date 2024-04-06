@@ -144,19 +144,21 @@ div.wc-modal, div.wc-modal-none, div.wc-highlighted, div.wc-highlighted-none {
 	position: relative;
 }
 .recordid-editor .z-toolbarbutton {
-	padding: 4px 0px 0px 1px;
     margin: 0px;
-    display: inline-block;
     background-image: none;
+    background-color: #0093f9;
     position: absolute;
-    background-color: #F7F7F7;
-    width: 22px;
+    width: 21px;
     height: 24px;
     min-height: 24px;
     right: 0px;
     top: 1px;
-    border: 1px solid #CFCFCF;
-    border-radius: 0;
+    color: white;
+    padding: 1px;
+  	border-radius: 0px;
+}
+.recordid-editor .z-toolbarbutton:hover {
+	background-color: #7ac8ff
 }
 
 .recordid-dialog {
