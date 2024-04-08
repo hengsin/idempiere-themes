@@ -80,7 +80,7 @@
 .z-west-collapsed {
   cursor: pointer;
   width: 24px;
-  border-right: none;
+  border: none;
 }
 
 <%-- Splitter --%>
