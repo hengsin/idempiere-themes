@@ -268,6 +268,7 @@
 	line-height: 12px;
 	left: 4px;
 	height: 12px;
+	top: 4px;
 }
 
 @media screen and (max-height: 767px) {
