@@ -109,6 +109,13 @@ div.wc-modal, div.wc-modal-none, div.wc-highlighted, div.wc-highlighted-none {
 	padding: 3px !important;
 }
 
+.z-notification-info .z-notification-left {
+  border-right-color: transparent;
+}
+.z-notification-left + .z-notification-icon {
+  left: 12px;
+}
+
 <%-- Quick Form Read-only Component --%>
 .quickform-readonly .z-textbox-readonly, .quickform-readonly .z-intbox-readonly, .quickform-readonly .z-longbox-readonly, .quickform-readonly .z-doublebox-readonly,
 .quickform-readonly .z-decimalbox-readonly, .quickform-readonly .z-datebox-readonly, .quickform-readonly .z-timebox-readonly, .quickform-readonly .editor-input-disd,
