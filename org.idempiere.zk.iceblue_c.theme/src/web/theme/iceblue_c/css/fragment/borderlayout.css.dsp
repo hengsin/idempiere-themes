@@ -1,7 +1,7 @@
 .z-south-collapsed, .z-north-collapsed {
 	height: 24px;
-	padding: 0px;
-	padding-left: 4px;
+	padding: 0px 0px 0px 4px;
+	border: none;
 }
 
 .z-south-collapsed:hover, .z-east-collapsed:hover, .z-west-collapsed:hover, .z-north-collapsed:hover {
@@ -50,22 +50,20 @@
 	filter: brightness(50%);
 }
 
-.z-north.slide {
-	border-bottom: 1px solid #cfcfcf;
-	box-shadow: 0px 0px 1px 1px #cfcfcf;
-	padding-bottom: 4px;
+.z-north-slide > .z-north {
+	box-shadow: 0px 0px 6px 0px #cfcfcf;
+	padding-bottom: 1px;
 }
-.z-south.slide {
-	border-top: 1px solid #cfcfcf;
-	box-shadow: 0px 0px 1px 1px #cfcfcf;
-	padding-top: 4px;
+.z-south-slide > .z-south {
+	box-shadow: 0px 0px 6px 0px #cfcfcf;
+	padding-top: 1px;
 }
-.z-west.slide {
+.z-west-slide > .z-west {
 	border-right: 1px solid #cfcfcf;
     box-shadow: 2px -1px 1px -1px #cfcfcf;
     padding-right: 4px;
 }
-.z-east.slide {
+.z-east-slide > .z-east {
 	border-left: 1px solid #cfcfcf;
 	box-shadow: 0px 0px 1px 1px #cfcfcf;
 	padding-left: 4px;
@@ -77,7 +75,13 @@
 .z-east-slide > .z-north-collapsed, .z-east-slide > .z-south-collapsed, .z-east-slide > .z-west-collapsed, .z-east-slide > .z-center-collapsed, .z-east-slide > .z-east-collapsed {
   background: #e0f2ff;
 }
-.z-west-collapsed {
+.z-south-slide > .south-collapsible-with-title.z-south > .z-south-header {
+	display: none;
+}
+.z-south-slide > .south-collapsible-with-title.z-south > .z-south-body {
+	height: 100% !important;
+}
+.z-west-collapsed, .z-east-collapsed {
   cursor: pointer;
   width: 24px;
   border: none;
