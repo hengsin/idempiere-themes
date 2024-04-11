@@ -122,7 +122,13 @@
 
 .recentitems-box A {
 	display: block;
-	padding: 1px 0px;
+	padding: 4px 14px;
+	line-height: 24px;
+}
+.recentitems-box A.menu-href:hover {
+	background: #e0f2ff;
+	text-decoration: none !important;
+	color: rgba(0,0,0,0.9) !important;
 }
 
 .recentitems-box .z-toolbar-start {
@@ -165,7 +171,12 @@
 
 .views-box .z-toolbarbutton {
 	width: 100%;
-	padding: 0px 14px;
+	padding: 4px 14px;
+	line-height: 24px;
+}
+.views-box .z-toolbarbutton:hover {
+	background: #e0f2ff;
+	color: rgba(0,0,0,0.9);
 }
 
 .views-box .link img {
