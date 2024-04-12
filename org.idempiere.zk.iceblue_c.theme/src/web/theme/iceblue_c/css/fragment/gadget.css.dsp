@@ -228,7 +228,7 @@
 .performance-indicator-box {
 	background-color: #eee; 
 	border: 1px solid #d8d8d8; 
-	border-radius: 11px; 
+	border-radius: 3px; 
 	cursor: pointer;
 }
 .performance-indicator-title {
@@ -237,6 +237,11 @@
 	border: 1px solid #c8c8c8;
 	padding-top: 4px; 
 	padding-bottom: 4px;
+	min-height: 48px;
+	width: 100%;
+	display: flex;  
+	justify-content: center;
+	align-items: center;
 }
 .performance-panel .z-grid {
 	border: none;
