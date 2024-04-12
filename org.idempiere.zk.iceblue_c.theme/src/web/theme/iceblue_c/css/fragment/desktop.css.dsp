@@ -50,19 +50,24 @@
 }
 
 .desktop-header-username {
-	padding-right: 6px;
+	padding: 0px 4px;
 }
 
 .desktop-header-username:hover {
-	color: blue;
-	text-decoration: underline;
+	background: #e0f2ff;
+	color: rgba(0,0,0,0.9);
 }
 
 .desktop-user-panel {
 	float: right;
+	height: 45px;
 }
 .desktop-user-panel.mobile .desktop-header-font.desktop-header-username {
 	font-weight: 600;
+}
+.desktop-user-panel .z-toolbarbutton:hover {
+	background: #e0f2ff;
+	color: rgba(0,0,0,0.9);
 }
 
 .desktop-layout {
