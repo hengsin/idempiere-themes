@@ -9,8 +9,9 @@
 }
 
 .menu-href:hover, .menu-href:active {
-	text-decoration: underline !important;
-	color: blue !important;
+	text-decoration: none !important;
+	background: #e0f2ff;
+	color: rgba(0,0,0,0.9);
 }
 
 .menu-href img {
