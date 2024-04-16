@@ -120,6 +120,9 @@
 .z-icon-Import:before {
 	content: "\f0ee";		
 }
+.z-icon-IncludeSelected:before {
+	content: "\f05d";
+}
 .z-icon-Info:before {	
 	content: "\f0eb";
 }
