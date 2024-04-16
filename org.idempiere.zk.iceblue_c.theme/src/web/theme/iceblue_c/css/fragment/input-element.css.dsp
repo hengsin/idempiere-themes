@@ -65,3 +65,21 @@ input:focus, textarea:focus, .z-combobox-input:focus, z-datebox-input:focus, sel
 .z-combobox-popup {
 	max-height: 200px;
 }
+
+<%-- datebox --%>
+.z-datebox {
+	padding-right: 25px;
+}
+.z-datebox-input {
+	padding-right: 5px;
+}
+.z-datebox-button {
+	border: none;
+  	border-radius: 4px;
+  	margin-right: 1px;
+  	min-width: 20px;
+  	height: 22px;
+}
+.z-datebox-button:hover {
+  background-color: #7ac8ff !important;
+}

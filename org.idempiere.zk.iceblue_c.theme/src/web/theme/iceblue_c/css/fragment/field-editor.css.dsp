@@ -5,6 +5,7 @@
 .editor-box {
 	display: inline-block;
 	padding: 0px; 
+	padding-right: 23px;
 	margin: 0px; 
 	position: relative;
 }
@@ -12,12 +13,8 @@
 .editor-input {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box; /* Firefox */
-	display: inline-block;
-	padding-right: 23px; 
+	display: inline-block;	 
 	width: 100%;
-}
-.editor-input.z-combobox + .editor-button.z-button {
-	height: 24px;
 }
 .editor-input.mobile.z-decimalbox {
 	padding-right: 5px;
@@ -26,7 +23,7 @@
 .editor-input:focus {
 }
 
-.editor-input-disd {
+.editor-box:has(> .editor-input-disd) {
 	padding-right: 0px !important;
 }
 	
@@ -43,11 +40,15 @@
 	right: 1px;
 	top: 1px;
 }
+
 .z-chosenbox {
-	height: 28px;
 }
 .z-chosenbox + .editor-button {
 	height: 26px;
+}
+.z-chosenbox:has(> input:focus) {
+  background: #FFFFCC !important;
+  border-color: #0093F9 !important;
 }
 
 .editor-button :hover {
@@ -77,8 +78,12 @@
 	display: inline-block; 
 	white-space:nowrap;
 }
-
-.number-box .grid-editor-input.z-decimalbox {
+.number-box.editor-box > .editor-input {
+	margin-right: 23px;
+	width: 100%;
+	padding-right: 2px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 }
 
 .datetime-box {
@@ -117,10 +122,6 @@ span.grid-combobox-editor {
 	border-left: 1px solid #0000ff;
 }
 
-.editor-input.z-combobox + .editor-button {
-    right: 0px;
-    top: 1px;
-}
 .editor-input.z-combobox > .z-combobox-input {
 	border-bottom-right-radius: 0;
 	border-top-right-radius: 0;
@@ -151,10 +152,14 @@ span.grid-combobox-editor {
 .payment-rule-editor .z-combobox .z-combobox-button-hover {
 	background-position: 0px 0px;
 }
-.payment-rule-editor .editor-button {
+.payment-rule-editor > .editor-button {
 	border-radius: 0px;
 	right: 24px;
+	border: none;
+  	top: 3px;
+  	min-height: 18px;
 }
+
 .z-combobox-button, .z-bandbox-button, .z-datebox-button, .z-timebox-button,
  .z-spinner-button, .z-doublespinner-button {
 	vertical-align: top;
@@ -219,4 +224,13 @@ span.grid-combobox-editor {
 .z-icon-Online {
 	color : #0093f9 !important;
 }
- 
+
+<%-- range button for datebox --%>
+.z-toolbarbutton:has(> span > i.z-icon-History) {
+  padding: 2px 4px;
+  background-color: #0093f9 !important;
+  color: white !important;
+}
+.z-toolbarbutton:has(> span > i.z-icon-History):hover {
+  background-color: #7ac8ff !important;
+}

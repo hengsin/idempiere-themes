@@ -156,13 +156,13 @@ div.wc-modal, div.wc-modal-none, div.wc-highlighted, div.wc-highlighted-none {
     background-color: #0093f9;
     position: absolute;
     width: 21px;
-    height: 24px;
-    min-height: 24px;
-    right: 0px;
-    top: 1px;
+    min-height: 20px;
+    right: 2px;
+    top: 4px;
     color: white;
     padding: 1px;
   	border-radius: 0px;
+  	border: none;
 }
 .recordid-editor .z-toolbarbutton:hover {
 	background-color: #7ac8ff
