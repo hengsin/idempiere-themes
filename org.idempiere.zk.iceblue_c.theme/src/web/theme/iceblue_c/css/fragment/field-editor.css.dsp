@@ -34,17 +34,14 @@
 	background-color: #0093f9;
 	background-image: none;
 	width: 20px;
-	height: 22px;
+	min-height: 23px;
 	border: 1px solid transparent;
 	position: absolute;
 	right: 1px;
-	top: 1px;
+	top: 2px;
 }
 
 .z-chosenbox {
-}
-.z-chosenbox + .editor-button {
-	height: 26px;
 }
 .z-chosenbox:has(> input:focus) {
   background: #FFFFCC !important;
@@ -157,7 +154,7 @@ span.grid-combobox-editor {
 	right: 24px;
 	border: none;
   	top: 3px;
-  	min-height: 18px;
+  	min-height: 20px;
 }
 
 .z-combobox-button, .z-bandbox-button, .z-datebox-button, .z-timebox-button,
