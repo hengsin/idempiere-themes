@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Theme
+Bundle-Name: iDempiere Ice Blue Compact Theme
 Bundle-SymbolicName: org.idempiere.zk.iceblue_c.theme
 Bundle-Version: 12.0.0.qualifier
 Bundle-Vendor: iDempiere
