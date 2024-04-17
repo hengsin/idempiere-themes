@@ -77,6 +77,9 @@ div.z-column-cnt, div.z-grid-header div.z-auxheader-cnt {
 .z-listitem.z-listitem-selected > .z-listcell:first-child {
 	border-left: none;
 }
+.z-listcell-content:has(> .z-listitem-checkbox) {
+    padding: 2px 4px 1px 1px;
+}
 
 .z-grid-emptybody td {
 	text-align: left;
@@ -134,4 +137,3 @@ div.grid-view-color-fieldtype-display > div {
 	width: 95%;
 	height: 80%;
 }
-
