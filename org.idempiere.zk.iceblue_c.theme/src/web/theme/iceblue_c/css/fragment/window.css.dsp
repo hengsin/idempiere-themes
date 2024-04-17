@@ -146,28 +146,6 @@ div.wc-modal, div.wc-modal-none, div.wc-highlighted, div.wc-highlighted-none {
 	margin: 5px;
 }
 
-.recordid-editor {
-	display: inline-block;
-	position: relative;
-}
-.recordid-editor .z-toolbarbutton {
-    margin: 0px;
-    background-image: none;
-    background-color: #0093f9;
-    position: absolute;
-    width: 21px;
-    min-height: 20px;
-    right: 2px;
-    top: 4px;
-    color: white;
-    padding: 1px;
-  	border-radius: 0px;
-  	border: none;
-}
-.recordid-editor .z-toolbarbutton:hover {
-	background-color: #7ac8ff
-}
-
 .recordid-dialog {
 	min-width: 400px;
 }

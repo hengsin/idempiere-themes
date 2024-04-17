@@ -3,11 +3,11 @@
 }
 
 .editor-box {
-	display: inline-block;
+	display: inline-flex;
 	padding: 0px; 
-	padding-right: 23px;
 	margin: 0px; 
 	position: relative;
+	align-items: center;
 }
 
 .editor-input {
@@ -15,6 +15,7 @@
 	-moz-box-sizing: border-box; /* Firefox */
 	display: inline-block;	 
 	width: 100%;
+	flex: auto;
 }
 .editor-input.mobile.z-decimalbox {
 	padding-right: 5px;
@@ -23,22 +24,27 @@
 .editor-input:focus {
 }
 
-.editor-box:has(> .editor-input-disd) {
-	padding-right: 0px !important;
-}
-	
 .editor-button {
 	padding: 0px;
 	margin: 0px;
-	display: inline-block;
-	background-color: #0093f9;
+	display: inline-block;	
+	background-color: transparent;
 	background-image: none;
-	width: 20px;
-	min-height: 23px;
-	border: 1px solid transparent;
-	position: absolute;
-	right: 1px;
-	top: 2px;
+	width: 24px;
+	min-width: 24px;
+	height: 24px;
+	min-height: 24px;	
+	border: none;
+	box-shadow: none;
+	flex: auto;
+}
+.z-button.editor-button > i,
+.z-button-os.editor-button > i {
+	color: #333;
+}
+.z-button.editor-button:hover > i,
+.z-button-os.editor-button:hover > i {
+  color: #fff;
 }
 
 .z-chosenbox {
@@ -91,7 +97,6 @@
 	padding: 1px 1px;
 }
 
-
 .editor-box .grid-editor-input.z-textbox {
 }
 
@@ -99,18 +104,6 @@
 }
 
 .grid-editor-button img {
-}
-
-.number-box {
-	display: inline-block; 
-	white-space:nowrap;
-}
-.number-box.editor-box > .editor-input {
-	margin-right: 23px;
-	width: 100%;
-	padding-right: 2px;
-	padding-top: 4px;
-	padding-bottom: 4px;
 }
 
 .datetime-box {
@@ -149,14 +142,9 @@ span.grid-combobox-editor {
 	border-left: 1px solid #0000ff;
 }
 
-.editor-input.z-combobox > .z-combobox-input {
-	border-bottom-right-radius: 0;
-	border-top-right-radius: 0;
-}
-
 <%-- payment rule --%>
 .payment-rule-editor {
-	display: inline-block;
+	display: inline-flex;
 	padding: 0px; 
 	margin: 0px; 
 	position: relative;
@@ -231,11 +219,6 @@ span.grid-combobox-editor {
     border-color:red;
 }
 
-.editor-button.z-button-os{
-	top: 0px;
-	background-color: #ffffff00 !important;
-}
-
 .idempiere-mandatory-label{
    color: red!important;
 }
@@ -248,16 +231,37 @@ span.grid-combobox-editor {
 	color: #fff;
 }
 
-.z-icon-Online {
-	color : #0093f9 !important;
-}
-
 <%-- range button for datebox --%>
 .z-toolbarbutton:has(> span > i.z-icon-History) {
-  padding: 2px 4px;
-  background-color: #0093f9 !important;
-  color: white !important;
+	padding: 2px;
+    min-width: 24px;
+    border: none;
 }
 .z-toolbarbutton:has(> span > i.z-icon-History):hover {
-  background-color: #7ac8ff !important;
+	background-color: #7ac8ff !important;
+}
+
+<%-- record id editor --%>
+.recordid-editor {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+.recordid-editor > input {
+  flex: auto;
+}
+.recordid-editor .z-toolbarbutton {
+    margin: 0px;
+    background-image: none;
+    position: relative;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    min-height: 24px;
+    right: auto !important;
+    padding: 0px;
+    flex: auto;
+}
+.recordid-editor .z-toolbarbutton:hover {
+	background-color: #7ac8ff
 }

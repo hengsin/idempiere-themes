@@ -40,7 +40,7 @@ html,body {
 		font-size: 12px;
 	}
 }
-.z-datebox-button [class*="z-icon-"], .z-bandbox-button [class*="z-icon-"], .z-combobox-button [class*="z-icon-"] {
+.z-bandbox-button [class*="z-icon-"], .z-combobox-button [class*="z-icon-"] {
 	font-size: 18px;
 }
 
