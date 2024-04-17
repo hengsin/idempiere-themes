@@ -136,6 +136,8 @@
 }
 .recentitems-box A.trash-toolbarbutton {
 	display: inline-block;
+	padding: 2px 11px;
+	border: none;
 }
 .recentitems-box .z-toolbar .z-toolbar-content {
 	display: inline-flex;
