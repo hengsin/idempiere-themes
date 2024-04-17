@@ -48,6 +48,7 @@
 }
 
 .z-chosenbox {
+	background-image: none;
 }
 .z-chosenbox:has(> input:focus) {
   background: #FFFFCC !important;
@@ -70,8 +71,9 @@
 	font-size: 14px;
 	font-weight: lighter;		
 	position: absolute;
-	top: 3px;
-	right: 29px; 	
+	top: 4px;
+	right: 30px;
+	z-index: 2000;
 }
 .editor-box + .btn-negate.z-button, 
 .editor-box + .btn-negate.z-button:focus {
