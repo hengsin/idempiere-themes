@@ -2,7 +2,6 @@
 {
 	text-align: right;
 }
-
 .form-label-heading
 {
 	text-align: center;
@@ -11,7 +10,6 @@
 .form-button {
 	width: 99%;
 }
-
 .form-button img {
 	width: 16px;
 	height: 16px;
@@ -94,4 +92,15 @@
 <%-- report wizard --%>
 .report-wizard-footer {
 	width: 100%;
+}
+
+<%-- workflow activity --%>
+.workflow-activity-form {
+}
+.workflow-panel-table {
+	border: 0px;
+}
+
+<%-- payment form --%>
+.payment-form-content {
 }

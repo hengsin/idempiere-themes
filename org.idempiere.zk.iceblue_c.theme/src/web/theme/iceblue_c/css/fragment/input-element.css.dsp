@@ -113,3 +113,6 @@ input[type="checkbox"]:focus {
     border-color: #006AF9;
     color: #FFFF08;
 }
+.z-label {
+	color: #333;
+}

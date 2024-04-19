@@ -1,3 +1,4 @@
+<%-- customization of border layout --%>
 .z-south-collapsed, .z-north-collapsed {
 	height: 24px;
 	padding: 0px 0px 0px 4px;

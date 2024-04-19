@@ -1,8 +1,4 @@
-.z-toolbar.z-toolbar-tabs {
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-
+<%-- z-toolbar customization --%>
 .toolbar {
 	padding: 0px;
 }
@@ -15,13 +11,14 @@
 	height: 28px;
 	padding: 1px;
 }
-
 .toolbar-button .z-toolbarbutton-content {
 	width: 24px;
 	height: 24px;
 	padding: 1px;
 	border: none;	
 }
+
+<%-- toolbar button in overflow popup --%>
 .toolbar-overflow-popup-vertical .toolbar-button, 
 .toolbar-overflow-popup-vertical .toolbar-button .z-toolbarbutton-content {
 	width: auto;
@@ -41,10 +38,13 @@
 	background-color: transparent;
 }
 
+.z-toolbar.z-toolbar-tabs {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
 .z-toolbar-start{
 	width:100%;
 }
-
 .z-toolbarbutton [class^="z-icon-"] {
 	color: inherit;
 }
@@ -66,6 +66,7 @@
 .z-toolbarbutton {
 	display: inline-flex;	
 	align-items: center;
+	color: #333;
 }
 .z-toolbarbutton .z-toolbarbutton-content {
 	display: inline-flex;
@@ -79,7 +80,15 @@
 .z-toolbar.space-between-content .z-toolbar-content {
 	justify-content: space-between;
 }
+.z-toolbarbutton-checked {
+    color: #FFFFFF !important;
+    background-color: #0093F9 !important;
+}
+.z-toolbarbutton[disabled], .z-toolbarbutton[disabled]:hover {
+	background-color: transparent;
+}
 
+<%-- toolbar button with font icon --%>
 .font-icon-toolbar-button.toolbar-button [class^="z-icon-"] {
 	font-size: 18px;
 	color: inherit;
@@ -100,6 +109,7 @@
 .toolbar-overflow-popup-vertical .font-icon-toolbar-button.toolbar-button .z-toolbarbutton-content {
 	justify-content: flex-start;
 }
+
 .toolbar-searchbox {
     margin-right: 10px;
     margin-left: 10px;
@@ -110,11 +120,4 @@
     display: none;
     width: 0px;
   }
-}
-.z-toolbarbutton-checked {
-    color: #FFFFFF !important;
-    background-color: #0093F9 !important;
-}
-.z-toolbarbutton[disabled], .z-toolbarbutton[disabled]:hover {
-	background-color: transparent;
 }

@@ -1,14 +1,23 @@
-.menu-search-list-toolbar-cell .fav-new-btn {
-	padding: 0px;
-    border-left: 0px;
-    border-right: 0px;
+<%-- z-panel customization --%>
+.z-panel-noborder {
+	border: none !important;
 }
-
-.fav-new-btn img {
-	height: 16px;
-	width: 16px;
+.z-panelchildren {
+	border: none;
+	height: 100%;
 }
-
+.z-panel-head {
+	padding-bottom: 1px;
+	border: none;
+}
+.z-panel-head .z-panel-header {
+	padding: 2px 5px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.z-caption .z-caption-content {
+	padding: 0 0 0 8px;
+	cursor: move;
+}
 .z-panel-icon {
 	font-size: 12px !important;
     color: #ACACAC !important;
@@ -16,6 +25,13 @@
     line-height: 24px !important;
     border: 0px !important;
     border-radius: 0px !important;
+}
+
+<%-- dashboard widget --%>
+.dashboard-layout {
+	width: 100%;
+	height: 100%;
+	position: relative;
 }
 
 .dashboard-widget.z-panel {
@@ -26,46 +42,10 @@
 .dashboard-widget > .z-panel-body {
 	flex-grow: 1;
 }
-
-.statusline-wrapper {
-	height: 100%;
-}
-
 .dashboard-widget.z-panel {
 	border: none;
 	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
-
-.z-panel-noborder {
-	border: none !important;
-}
-
-.z-panelchildren {
-	border: none;
-	height: 100%;
-}
-
-.z-panel-head {
-	padding-bottom: 1px;
-	border: none;
-}
-
-.z-panel-head .z-panel-header {
-	padding: 2px 5px;
-    border-bottom: 1px solid #e4e4e4;
-}
-
-.z-caption .z-caption-content {
-	padding: 0 0 0 8px;
-	cursor: move;
-}
-
-.dashboard-layout {
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
 .dashboard-widget {
 	margin-top: 1px; 
 	margin-left: auto; 
@@ -74,23 +54,15 @@
 	width: 99%;	
 	height: 100%;
 }
-
 .dashboard-widget-max {
 	margin: auto;
 	width: auto;	
 }
-
 .dashboard-widget.dashboard-widget-max > .z-panel-body > .z-panelchildren {
 	overflow: auto;
 }
 
-.dashboard-report-iframe {
-	min-height:300px; 
-	border: 1px solid lightgray; 
-	margin:auto;
-	width: 99%;
-}
-
+<%-- favourites gadget --%>
 .favourites-box {
 	width: 100%;
 	margin: auto;
@@ -113,7 +85,12 @@
 	font-family: FontAwesome;
 	font-size: 20px;
 }
+.fav-new-btn img {
+	height: 16px;
+	width: 16px;
+}
 
+<%-- recent items gadget --%>
 .recentitems-box {
 	width: 100%;
 	margin: auto;
@@ -143,16 +120,6 @@
 	display: inline-flex;
 	align-items: center;
 }
-
-.dashboard-report-toolbar .z-toolbar-content {
-	display: block;
-}
-
-.dashboard-report-toolbar .rowcount-label {
-	float: right;
-	padding: 5px;
-}
-
 .recentitems-box .trash-toolbarbutton .z-toolbarbutton-content {
 	font-size: 16px;
 }
@@ -160,17 +127,49 @@
 	font-family: FontAwesome;
 	font-size: 20px;
 }
-	
+.recentitems-box .z-toolbar, .favourites-box .z-toolbar {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+<%-- embedded report content --%>
+.dashboard-report-iframe {
+	min-height:300px; 
+	border: 1px solid lightgray; 
+	margin:auto;
+	width: 99%;
+}
+.dashboard-report-toolbar .z-toolbar-content {
+	display: block;
+}
+.dashboard-report-toolbar .rowcount-label {
+	float: right;
+	padding: 5px;
+}
+.fill-mandatory-process-para-wrapper {
+    padding: 11px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.fill-mandatory-process-para-text {
+    background: #C62223;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 90%;
+}
+
+<%-- views gadget --%>	
 .views-box {
 	width: 100%;
 	margin: auto;
 	padding: 2px 0px 2px 0px;
 }
-
 .views-box .z-vbox {
 	width: 100%;
 }
-
 .views-box .z-toolbarbutton {
 	width: 100%;
 	padding: 4px 14px;
@@ -180,7 +179,6 @@
 	background: #e0f2ff;
 	color: rgba(0,0,0,0.9);
 }
-
 .views-box .link img {
 	height: 16px;
 	width: 16px;
@@ -196,24 +194,18 @@
 	justify-content: left;
 }
 
+<%-- activities gadget --%>
 .activities-box {
 	width: 100%;
 	margin: auto;
 	padding: 0px 14px;
 	cursor: pointer;
 }
-
 .activities-box .z-vbox {
 	width: 100%;
 }
-
 .activities-box .z-button {
 	text-align: left;
-}
-
-.recentitems-box .z-toolbar, .favourites-box .z-toolbar {
-	margin-top: 5px;
-	margin-bottom: 5px;
 }
 
 <%-- performance indicator --%>
@@ -252,21 +244,18 @@
 	position: relative;
 	width: 100%;
 }
-
 .gauge-indicator-title {
 	text-align: center;
 	padding-top: 1px; 
 	padding-bottom: 1px;
 	line-height:12px;
 }
-
 .performance-gadget {
 	display: flex;
  	justify-content: center;
  	align-items: center;
 	cursor: pointer;
 }
-
 .performance-gadget > .z-div {
 	width: 100%;	
 }
@@ -283,6 +272,7 @@
 	}
 }
 
+<%-- chart gadget --%>
 .dashboard-widget.dashboard-widget-max .chart-gadget {
 	height: 100% !important; 
 }
@@ -290,6 +280,10 @@
 	text-align: center !important;
 }
 
+<%-- status line gadget --%>
+.statusline-wrapper {
+	height: 100%;
+}
 .statusline-gadget {
 	display: flex;
 	flex-direction: column;
@@ -299,6 +293,7 @@
  	padding: 10px 0px;
 }
 
+<%-- help gadget --%>
 .help-content
 {
 	padding: 5px;
@@ -310,73 +305,51 @@
 	font-size: 14px;
 }
 
-.fav-new-btn.z-toolbarbutton [class^="z-icon-"] {
-}
-
-.new-toolbarbutton.z-toolbarbutton {
-	padding: 2px 5px;
-}
-
 <%-- User Favorite Dashboard Panel Start --%>
 .fav-tree-panel {
   border-radius: 0px;
   border: 1px solid #d8d8d8 !important;
 }
-
-.fav-toolbar {
-}
-
 .fav-toolbar-div {
   position: relative;
   width: 100%;
 }
-
 .fav-tree-btn {
   margin-left: 5px !important;
   padding: 3px 15px;
   border: 1px solid #6d6d6d;
 }
-
 .fav-folder-textbox {
   width: 100%;
 }
 .fav-summary-folder .z-treecell-content {
   font-weight: bold;
 }
-
 .fav-expand-mode {
   transform: rotate(180deg);
 }
-
 .fav-mobile-ctx-menu {
   margin: 0px 5px;
   padding: 0px 5px;
   vertical-align: middle;
 }
-<%-- User Favorite Dashboard Panel End --%>
-
-.z-anchorchildren .z-hlayout {
-	white-space: normal;
+<%-- favourites new button --%>
+.new-toolbarbutton.z-toolbarbutton {
+	padding: 2px 5px;
 }
 
-.desktop-home-tabpanel .z-hlayout-inner {
-	padding: 5px !important;
-}
-
+<%-- help icon and popup for gadget --%>
 .dashboard-content-help-icon {
 	padding: 5px;
 	cursor: default;
 	visibility: hidden;
 }
-
 .z-caption:hover .dashboard-content-help-icon {
 	visibility: visible;
 }
-
 .dashboard-content-help-popup {
 	display: none;
 }
-
 .dashboard-content-help-icon:hover ~ .dashboard-content-help-popup {
 	display: inline-flex;
 	background: black;
@@ -387,19 +360,10 @@
     z-index: 1800;
     max-width: 300px;
 }
-
-.fill-mandatory-process-para-wrapper {
-    padding: 11px;
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
+.dashboard-content-help .z-popup-content {
+	background: black;
+	color: white;
+	border-radius: 5px;
 }
 
-.fill-mandatory-process-para-text {
-    background: #C62223;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    opacity: 90%;
-}
 

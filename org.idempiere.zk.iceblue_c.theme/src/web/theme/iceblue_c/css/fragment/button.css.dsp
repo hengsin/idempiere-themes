@@ -1,3 +1,4 @@
+<%-- customization of buttons --%>
 .z-button, .z-button-os {
   display: inline-block;
   padding: 4px 20px;
@@ -71,4 +72,12 @@
 }
 .btn-cancel.z-button [class^="z-icon-"]:before {
 	color: white;	
+}
+
+.z-combobox-button, .z-bandbox-button, .z-datebox-button, .z-timebox-button,
+ .z-spinner-button, .z-doublespinner-button {
+	vertical-align: top;
+}
+.z-bandbox-button [class*="z-icon-"], .z-combobox-button [class*="z-icon-"] {
+	font-size: 18px;
 }

@@ -1,10 +1,3 @@
-.find-window {
-}
-.find-window-simple {
-}
-.find-window-advanced {
-}
-
 .find-window-simple .z-south .z-hbox, .find-window-advanced .z-south .z-hbox {
 	margin-top: 5px;
 }

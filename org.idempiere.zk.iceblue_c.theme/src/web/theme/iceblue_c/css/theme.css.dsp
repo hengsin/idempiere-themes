@@ -40,9 +40,6 @@ html,body {
 		font-size: 12px;
 	}
 }
-.z-bandbox-button [class*="z-icon-"], .z-combobox-button [class*="z-icon-"] {
-	font-size: 18px;
-}
 
 <%-- Mobile/Tablet --%>
 .tablet-scrolling {
@@ -60,17 +57,6 @@ html,body {
 <%-- vbox fix for firefox and ie --%>
 table.z-vbox > tbody > tr > td > table {
 	width: 100%;	
-}
-
-<%-- workflow activity --%>
-.workflow-activity-form {
-}
-.workflow-panel-table {
-	border: 0px;
-}
-
-<%-- payment form --%>
-.payment-form-content {
 }
 
 <c:include page="fragment/login.css.dsp" />

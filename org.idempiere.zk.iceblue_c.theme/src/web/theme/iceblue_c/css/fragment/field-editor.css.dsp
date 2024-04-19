@@ -1,7 +1,4 @@
-.mandatory-decorator-text {
-	text-decoration: none; font-size: xx-small; vertical-align: top; color:red;
-}
-
+<%-- container for input field and button --%>
 .editor-box {
 	display: inline-flex;
 	padding: 0px; 
@@ -10,6 +7,7 @@
 	align-items: center;
 }
 
+<%-- input field --%>
 .editor-input {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box; /* Firefox */
@@ -21,9 +19,7 @@
 	padding-right: 5px;
 }
 
-.editor-input:focus {
-}
-
+<%-- button for field --%>
 .editor-button {
 	padding: 0px;
 	margin: 0px;
@@ -46,7 +42,19 @@
 .z-button-os.editor-button:hover > i {
   color: #fff;
 }
+.editor-button :hover {
+	-webkit-filter: contrast(1.5);
+	filter: contrast(150%);
+}
+.editor-button img {
+	vertical-align: top;
+	text-align: left;
+	width: 18px;
+	height: 18px;
+	padding: 1px 1px;
+}
 
+<%-- chosen box --%>
 .z-chosenbox {
 	background-image: none;
 }
@@ -86,56 +94,28 @@
 	line-height: 14px;
 }
 
-.editor-button :hover {
-	-webkit-filter: contrast(1.5);
-	filter: contrast(150%);
-}
-
-.editor-button img {
-	vertical-align: top;
-	text-align: left;
-	width: 18px;
-	height: 18px;
-	padding: 1px 1px;
-}
-
-.editor-box .grid-editor-input.z-textbox {
-}
-
-.grid-editor-button {
-}
-
-.grid-editor-button img {
-}
-
+<%-- datetime box --%>
 .datetime-box {
 	white-space:nowrap;
 }
-.datetime-box .z-datebox {
-}
-.datetime-box .z-timebox {
-}
 
+<%-- combobox editor in grid view --%>
 span.grid-combobox-editor {
 	width: 100% !important;
 	position: relative;
 }
-
 .grid-combobox-editor input {
 	width: 100% !important;
 	padding-right: 26px;
 	border-right: 0px;
 }
-
 .grid-combobox-editor.z-combobox-disabled input {
 	padding-right: 5px;
 }
-
 .grid-combobox-editor .z-combobox-button {
 	position: absolute;
 	right: 0px;
 }
-
 .grid-combobox-editor input:focus {
 	border-right: 0px;
 }
@@ -177,20 +157,12 @@ span.grid-combobox-editor {
   	min-height: 20px;
 }
 
-.z-combobox-button, .z-bandbox-button, .z-datebox-button, .z-timebox-button,
- .z-spinner-button, .z-doublespinner-button {
-	vertical-align: top;
-}
 <%-- chart --%>
 .chart-field {
 	padding: 10px; 
 }
 
-.field-label {
-	position: relative; 
-	float: right;
-}
-
+<%-- image field --%>
 .image-field {
 	cursor: pointer;
 	border: 1px solid #C5C5C5;
@@ -208,13 +180,24 @@ span.grid-combobox-editor {
 	z-index: 1;
 }
 
+<%-- html field --%>
 .html-field {
 	cursor: pointer;
 	overflow: auto;
 }
 
+<%-- dashboard content editor --%>
 .dashboard-field-panel.z-panel, .dashboard-field-panel.z-panel > .z-panel-body,  .dashboard-field-panel.z-panel > .z-panel-body > .z-panelchildren  {
 	overflow: visible;
+}
+
+<%-- field label --%>
+.field-label {
+	position: relative; 
+	float: right;
+}
+.mandatory-decorator-text {
+	text-decoration: none; font-size: xx-small; vertical-align: top; color:red;
 }
 
 .idempiere-mandatory, .idempiere-mandatory input, .idempiere-mandatory a {
@@ -229,9 +212,6 @@ span.grid-combobox-editor {
     cursor: pointer; 
     text-decoration: underline;
 }
-.z-button [class^="z-icon-"], .z-button-os [class^="z-icon-"] {
-	color: #fff;
-}
 
 <%-- range button for datebox --%>
 .z-toolbarbutton:has(> span > i.z-icon-History) {
@@ -241,6 +221,28 @@ span.grid-combobox-editor {
 }
 .z-toolbarbutton:has(> span > i.z-icon-History):hover {
 	background-color: #7ac8ff !important;
+}
+.date-picker-calendar-button {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+}
+<%-- date range editor --%>
+.date-picker-container {
+	padding-left: 5px;
+}
+.date-picker-component {
+	display: inline-grid;
+	min-height: 25px;
+	border-radius: 5px;
+	margin: 0px 5px 5px 0px !important;
+}
+.date-picker-component .z-listbox {
+	border: none;
+}
+.date-picker-label {
+	font-weight: bold;
+	margin: 5px;
 }
 
 <%-- record id editor --%>
@@ -266,4 +268,9 @@ span.grid-combobox-editor {
 }
 .recordid-editor .z-toolbarbutton:hover {
 	background-color: #7ac8ff
+}
+
+<%-- font icon for field button --%>
+.z-button [class^="z-icon-"], .z-button-os [class^="z-icon-"] {
+	color: #fff;
 }
